@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Paciente</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/pacienteList.html">Listar Pacientes</a>
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+            <h3>Editar</h3>
+            <form id="edit_paciente">
+                <div class="form-group">
+                    <label class="control-label" for="editNombre">Nombre:</label>
+                    <input type="text" class="form-control" id="editNombre"
+                           placeholder="Ingrese el nombre"
+                           name="nombre" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="editApellido">Apellido:</label>
+                    <input type="text" class="form-control" id="editApellido"
+                           placeholder="Ingrese el apellido"
+                           name="apellido" required></input>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label" for="editCalle">Calle:</label>
+                        <input type="text" class="form-control" id="editCalle"
+                               placeholder="Ingrese el nombre de la calle"
+                               name="editCalle" required></input>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editNumero">Numero:</label>
+                        <input type="text" class="form-control" id="editNumero"
+                               placeholder="Ingrese el numero de casa"
+                               name="editNumero" required></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label" for="editLocalidad">Localidad:</label>
+                        <input type="text" class="form-control" id="editLocalidad"
+                               placeholder="Ingrese el nombre de la localidad"
+                               name="editLocalidad" required></input>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editProvincia">Provincia:</label>
+                        <input type="text" class="form-control" id="editProvincia"
+                               placeholder="Ingrese la provincia"
+                               name="editProvincia" required></input>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="editDni">DNI:</label>
+                    <input type="text" class="form-control" id="editDni"
+                           placeholder="Ingrese el DNI"
+                           name="editDni" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="editFecha">Fecha:</label>
+                    <input type="date" class="form-control" id="editFecha"
+                           placeholder="Ingrese la fecha de alta"
+                           name="editFecha" required></input>
+                </div>
+
+                <button type="submit" class="btn btn-danger"
+                        id="btn-add-new-paciente">Guardar</button>
+            </form>
+            <div id="responseEdit" style="display:none; margin-top:10px">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/edit_paciente.js"></script>
+</body>
+
+
+</html>
